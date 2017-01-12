@@ -40,7 +40,7 @@
 		} ); 
 	} );   
 } )( jQuery ); 
- 
+  
 /**
  * File navigation.js.
  *
