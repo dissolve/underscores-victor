@@ -88,6 +88,7 @@ add_action( 'after_setup_theme', 'underscores_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+
 function underscores_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'underscores' ),
@@ -105,13 +106,19 @@ add_action( 'widgets_init', 'underscores_widgets_init' );
  * Enqueue scripts and styles.
  */
 function underscores_scripts() {
+    wp_enqueue_style( 'underscores-style', get_template_directory_uri() . '/dist/assets/css/main.min.css', false, NULL ); 
+    
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/dist/assets/css/font-awesome-4.3.0/css/font-awesome.min.css', array(), '4.0.3' );
+    
+    wp_enqueue_script( 'underscores-jquery', get_template_directory_uri() . '/dist/assets/js/jquery-3.1.1.min.js', false, NULL );
+    
+    wp_enqueue_script( 'underscores-main', get_template_directory_uri() . '/dist/assets/js/main.min.js', false, NULL );    
+
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
 
-	// wp_enqueue_script( 'underscores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	// wp_enqueue_script( 'underscores-navigation', get_template_directory_uri() . '/src/scripts/navigation.js', array(), '20151215', true );
 
-	// wp_enqueue_script( 'underscores-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-    
-    wp_enqueue_script( 'underscores-main', get_template_directory_uri() . '/dist/assets/js/main.min.js', array(), '', true );
+	// wp_enqueue_script( 'underscores-skip-link-focus-fix', get_template_directory_uri() . '/src/scripts/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -143,3 +150,10 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'underscores-starter' ),
+) );
