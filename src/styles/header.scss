@@ -3,8 +3,10 @@ header[role=banner] {
     height: auto;
 }                       
 
-.nav {
+.nav, .poopy {  
     &.navbar-nav {
         float: right !important;    
-    }
-} 
+        transition: all 0.3s;
+        box-sizing: border-box;
+    }  
+}     
