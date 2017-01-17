@@ -2,3 +2,9 @@
 header[role=banner] {  
     height: auto;
 }                       
+
+.nav {
+    &.navbar-nav {
+        float: right !important;    
+    }
+} 

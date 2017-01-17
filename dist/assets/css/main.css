@@ -2,6 +2,14 @@ header[role=banner] {
   height: auto;
 }
 
+.nav.navbar-nav {
+  float: right !important;
+}
+
+.dump {
+  margin: 0;
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -837,10 +845,6 @@ object {
 
 .gallery-caption {
   display: block;
-}
-
-.dump {
-  margin: 0;
 }
 
 /*!

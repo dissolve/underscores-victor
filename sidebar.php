@@ -16,4 +16,5 @@
             <?php dynamic_sidebar( 'sidebar-1' ); ?>
         </aside><!-- #secondary -->
     </div>
-</div>
+
+</div><!-- .row -->
