@@ -3,6 +3,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
+    jshint = require('gulp-jshint'),
     cssnano = require('gulp-cssnano'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
@@ -26,6 +27,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
   return gulp.src('src/scripts/**/*.js')
+	.pipe(jshint('.jshintrc'))
+	.pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/assets/js'))
     .pipe(rename({suffix: '.min'}))
@@ -60,4 +63,15 @@ gulp.task('watch', function() {
   // Watch image files
   gulp.watch('src/images/**/*', ['images']);
 
+});
+
+var gulp = require('gulp');
+var optipng = require('gulp-optipng');
+ 
+var options = ['-o2'];
+ 
+gulp.task('default', function () {
+    gulp.src('src/images/**/*.png')
+        .pipe(optipng('-o2'))
+        .pipe(gulp.dest('dist/assets/img'));
 });
