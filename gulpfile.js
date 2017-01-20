@@ -3,8 +3,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    jshint = require('gulp-jshint'),
     cssnano = require('gulp-cssnano'),
+    jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
@@ -63,15 +63,4 @@ gulp.task('watch', function() {
   // Watch image files
   gulp.watch('src/images/**/*', ['images']);
 
-});
-
-var gulp = require('gulp');
-var optipng = require('gulp-optipng');
- 
-var options = ['-o2'];
- 
-gulp.task('default', function () {
-    gulp.src('src/images/**/*.png')
-        .pipe(optipng('-o2'))
-        .pipe(gulp.dest('dist/assets/img'));
 });
