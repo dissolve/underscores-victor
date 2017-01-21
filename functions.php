@@ -110,9 +110,9 @@ function underscores_scripts() {
     
     wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/dist/assets/css/font-awesome-4.3.0/css/font-awesome.min.css', array(), '4.0.3' );
     
-    wp_enqueue_script( 'underscores-jquery', get_template_directory_uri() . '/dist/assets/js/jquery-3.1.1.min.js', false, NULL );
+    wp_enqueue_script( 'underscores-jquery', get_template_directory_uri() . '/dist/assets/js/jquery-3.1.1.min.js', false, NULL );   
     
-    wp_enqueue_script( 'underscores-main', get_template_directory_uri() . '/dist/assets/js/main.min.js', false, NULL );    
+    wp_enqueue_script( 'underscores-main', get_template_directory_uri() . '/dist/assets/js/main.min.js', false, NULL );     
 
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
 

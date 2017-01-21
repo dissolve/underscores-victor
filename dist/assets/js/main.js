@@ -2425,7 +2425,7 @@ $(window).scroll(function() {
   } else {
     $('nav').removeClass('shrink');
   }
-});
+}); 
 /**
  * File navigation.js.
  *
