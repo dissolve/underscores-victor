@@ -19,6 +19,7 @@ nav {
 
 nav.navbar.shrink {
 	min-height: 35px;
+<<<<<<< HEAD
     .navbar-brand {
                         
     transition: transform 0.2s;
@@ -41,4 +42,16 @@ nav.navbar.shrink {
         margin: 8px 15px 8px 0;
         padding: 4px 5px;
     }
+=======
+  .navbar-brand {font-size: 25px;}
+  a {
+    font-size: 15px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+  } 
+  .navbar-toggle {
+    margin: 8px 15px 8px 0;
+    padding: 4px 5px;
+  }
+>>>>>>> 5c4c77fbc04e0b92ac21af7b3f5988299c1512df
 }
