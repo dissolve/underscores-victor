@@ -31,7 +31,7 @@ if (typeof jQuery === 'undefined') {
   // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
   // ============================================================
  
-  function transitionEnd() {
+  function transitionEnd() { 
     var el = document.createElement('bootstrap')
 
     var transEndEventNames = {

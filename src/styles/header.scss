@@ -1,11 +1,11 @@
 // Header
-body 
-{
-	padding-top: 60px;
-}
+    body 
+    {
+        padding-top: 60px;
+    }
+
 nav {
   .navbar-brand {
-
     }
 	a {
 		font-size: 18px;
@@ -19,20 +19,14 @@ nav {
 
 nav.navbar.shrink {
 	min-height: 35px;
-<<<<<<< HEAD
-    .navbar-brand {
-                        
-    transition: transform 0.2s;
-        
-        transform: scale(.75);
-        img { 
-                
-    transition: transform 0.2s;
-     
-        transform: scale(.75);
+        .navbar-brand {              
+            transition: transform 0.2s;
+            transform: scale(.75);
+            img {         
+                transition: transform 0.2s;
+                transform: scale(.75);
+            }
         }
-        
-    }
     a {
         font-size: 14px;
         padding-bottom: 15px !important;
@@ -42,16 +36,4 @@ nav.navbar.shrink {
         margin: 8px 15px 8px 0;
         padding: 4px 5px;
     }
-=======
-  .navbar-brand {font-size: 25px;}
-  a {
-    font-size: 15px;
-    padding-bottom: 10px !important;
-    padding-top: 10px !important;
-  } 
-  .navbar-toggle {
-    margin: 8px 15px 8px 0;
-    padding: 4px 5px;
-  }
->>>>>>> 5c4c77fbc04e0b92ac21af7b3f5988299c1512df
 }
