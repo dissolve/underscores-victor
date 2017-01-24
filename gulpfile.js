@@ -22,11 +22,11 @@ gulp.task('styles', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
     .pipe(gulp.dest('dist/assets/css'))
-    .pipe(notify({ message: 'Styles task complete' }));
+    .pipe(notify({ message: 'Styles task complete' })); 
 });
  
-gulp.task('scripts', function() { 
-  return gulp.src('src/scripts/**/*.js', '!src/scripts/**/customizer.js')
+gulp.task('scripts', function() {
+  return gulp.src(['src/scripts/**/*.js', '!src/scripts/**/customizer.js'])
 	.pipe(jshint('.jshintrc'))
 	.pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
