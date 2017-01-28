@@ -59,7 +59,7 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div><!--end navbar-header-->
-                <div class="collapse navbar-collapse menu-primary" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse navbar-right menu-primary" id="bs-example-navbar-collapse-1">
                     <?php
                         wp_nav_menu( array(
                             'menu'              => 'primary',
