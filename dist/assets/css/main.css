@@ -851,7 +851,6 @@ object {
   background-color: #f4f4f4;
 }
 
-
 nav {
   height: 100px;
   transition: all 0.2s ease;
@@ -859,7 +858,7 @@ nav {
 nav .navbar-brand {
   padding: 0;
 }
-nav a {
+nav a, nav .poop {
   font-size: 18px;
   padding-bottom: 20px !important;
   transition: all 0.2s ease;
@@ -8916,6 +8915,7 @@ button.close {
     display: none !important;
   }
 }
+
 
 .dump {
   margin: 0;
