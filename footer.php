@@ -20,7 +20,7 @@
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'underscores' ), 'underscores', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-
+poop
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
