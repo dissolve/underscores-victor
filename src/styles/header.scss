@@ -5,7 +5,7 @@
         .navbar-brand {
             padding: 0;
         }
-        a, .poop {
+        a {
             font-size: 18px;
             padding-bottom: 20px !important;
             transition: all 0.2s ease;
@@ -31,7 +31,7 @@
 // Media 
     @media screen and (max-width: 992px) {
         .navbar-default {
-            height: 75px;
+            height: 75px; 
             .navbar-brand {              
                 transform-origin: top left;
                 transition: transform 0.2s;
@@ -41,11 +41,11 @@
                 font-size: 14px;
             }            
         }
-    }
+    } 
 
 // Custom
     .navbar-default {
-        background-color: rgba(248, 248, 248, 0.25) !important;
+        background-color: transparent !important; // rgba(248, 248, 248, 0.25) !important;
         border: none !important;
     }
     .navbar-toggle {
