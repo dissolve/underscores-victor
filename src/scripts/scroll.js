@@ -37,4 +37,4 @@
                 currLink.removeClass("active");
             }
         }); 
-    }
+    } 

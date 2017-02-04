@@ -2521,7 +2521,7 @@ if (typeof jQuery === 'undefined') {
                 currLink.removeClass("active");
             }
         }); 
-    }
+    } 
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
         $('nav').addClass('shrink');
