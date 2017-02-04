@@ -16,7 +16,7 @@ get_header(); ?>
                     </div>
                 </section>
 
-                <section id="about">
+                <section id="work">
                     <div class="container">
                         <div class="row">
                             <div id="intro">
@@ -40,7 +40,7 @@ get_header(); ?>
                     </div>
                 </section>
                 
-                <section id="portfolio">
+                <section id="resume">
                     <div class="container">
                         <div class="row">
                             <div id="intro">

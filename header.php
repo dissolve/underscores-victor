@@ -48,7 +48,7 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#masthead">
                     <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/img/logo-temp.jpg" alt="">
                 </a>                 
                 <div class="navbar-header">

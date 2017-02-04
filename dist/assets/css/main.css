@@ -863,6 +863,9 @@ nav a {
   padding-bottom: 20px !important;
   transition: all 0.2s ease;
 }
+nav a.active {
+  color: coral !important;
+}
 
 .navbar-default.shrink {
   height: 75px;
@@ -909,7 +912,6 @@ nav a {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 6px !important;
 }
-
 
 .dump {
   margin: 0;
@@ -8921,3 +8923,4 @@ button.close {
     display: none !important;
   }
 }
+

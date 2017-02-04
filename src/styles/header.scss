@@ -9,6 +9,9 @@
             font-size: 18px;
             padding-bottom: 20px !important;
             transition: all 0.2s ease;
+            &.active {
+                color: coral !important;
+            }
         }
     } 
 
