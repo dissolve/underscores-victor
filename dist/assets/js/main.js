@@ -2520,7 +2520,7 @@ if (typeof jQuery === 'undefined') {
             else{
                 currLink.removeClass("active");
             }
-        });
+        }); 
     }
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {

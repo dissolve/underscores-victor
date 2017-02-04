@@ -36,5 +36,5 @@
             else{
                 currLink.removeClass("active");
             }
-        });
+        }); 
     }
