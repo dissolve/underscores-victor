@@ -84,9 +84,11 @@ get_header(); ?>
                 </div>
             </section>
             <section id="contact">
-
+<div id="map"></div>
                 <div class="container">
-                    <div id="map_canvas"></div>
+                        
+
+
                     <div class="row">
                         <div id="intro">
                             <h1>What is Underscores?</h1>

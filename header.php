@@ -17,7 +17,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
     
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700,700i" rel="stylesheet">
-
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMdjXOS5SNdDqMw5APe0fyeOmrRrVYsSY&callback=initMap">
+    </script>
 <?php wp_head(); ?>
     
 </head>
