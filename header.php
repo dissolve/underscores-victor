@@ -18,6 +18,11 @@
     
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700,700i" rel="stylesheet">
 
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEyY2Y-zO4kRPwqL0b4VUDFZHu4oytlYI&callback=initMap"
+  type="text/javascript"></script>
+
+
 <?php wp_head(); ?>
     
 </head>
