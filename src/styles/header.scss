@@ -6,43 +6,18 @@
             padding: 0;
         }
         a {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6) !important;
             font-size: 18px;
             padding-bottom: 20px !important;
             transition: all 0.2s ease;
+            &:hover {
+                color: rgba(255, 255, 255, 1) !important;
+            }
             &.active {
                 color: coral !important;
             }
-        }
-    } 
-
-// Shrink
-    .navbar-default {
-        &.shrink {
-            height: 75px;
-            .navbar-brand {              
-                padding: 0;
-                transform-origin: top left;
-                transition: transform 0.2s;
-                transform: scale(.75);
-            }
-            a {
-                font-size: 14px;
-            }           
-        } 
-    }
-
-// Media 
-    @media screen and (max-width: 992px) {
-        .navbar-default {
-            height: 75px; 
-            .navbar-brand {              
-                transform-origin: top left;
-                transition: transform 0.2s;
-                transform: scale(.75);
-            }
-            a {
-                font-size: 14px;
-            }            
         }
     } 
 
@@ -63,5 +38,36 @@
         }
         .icon-bar + .icon-bar {
             margin-top: 6px !important;
+        }
+    }
+
+// Shrink
+    .navbar-default.shrink {
+        background-color: rgba(0, 0, 0, 0.75) !important;
+        height: 75px;
+        .navbar-brand {              
+            padding: 0;
+            transform-origin: top left;
+            transition: transform 0.2s;
+            transform: scale(.75);
+        }
+        a {
+            font-size: 14px;
+        }           
+    }
+
+// Media query
+    @media screen and (max-width: 992px) {
+        .navbar-default {
+            background-color: rgba(0, 0, 0, 0.75) !important;
+            height: 75px; 
+            .navbar-brand {              
+                transform-origin: top left;
+                transition: transform 0.2s;
+                transform: scale(.75);
+            }
+            a {
+                font-size: 14px;
+            }            
         }
     }

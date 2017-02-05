@@ -11,8 +11,19 @@ get_header(); ?>
             <main id="main" class="site-main" role="main">
 			
                 <section id="hero">
-                    <div class="">
-                        <h1>Create your Underscores based theme</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <h1 class="text-center source-sans light">Hi, I'm Victor Coutin.</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <h3 class="source-sans light">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                                </h3>
+                            </div>
+                        </div>                        
                     </div>
                 </section>
 

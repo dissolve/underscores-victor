@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
     
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700,700i" rel="stylesheet">
 
 <?php wp_head(); ?>
     
@@ -49,7 +49,7 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand" href="#masthead">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/img/logo-temp.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/img/logo-victor.png" alt="">
                 </a>                 
                 <div class="navbar-header">
                     <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
