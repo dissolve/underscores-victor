@@ -14,11 +14,15 @@
     </div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<!--<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'underscores' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'underscores' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'underscores' ), 'underscores', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		</div> .site-info -->
+        <div class="copyright text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/img/logo-victor.png" alt="">
+            <p>© Victor Coutin 2017</p>
+        </div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

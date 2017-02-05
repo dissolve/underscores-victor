@@ -1,0 +1,15 @@
+// Footer
+    footer[role="contentinfo"] {
+        margin-top: 80px;
+        height: 200px;
+        background-color: #dcdcdc;
+        .copyright {
+            img {
+                margin-top: 40px;
+            }
+            p {
+                color: #fff;
+                margin-top: -20px;
+            } 
+        }
+    } 
