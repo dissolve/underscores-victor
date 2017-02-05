@@ -848,7 +848,7 @@ object {
 #hero {
   color: #fff;
   background-color: #363636;
-  padding: 80px 0 40px;
+  padding: 80px 0 60px;
   overflow: hidden;
   height: auto;
   min-height: 420px;
@@ -857,11 +857,106 @@ object {
   font-size: 72px !important;
   margin-top: 40px;
 }
+#hero h3 {
+  line-height: 32px;
+}
 
 #work {
   overflow: hidden;
   padding: 80px 0 40px;
   background-color: #f4f4f4;
+}
+
+.dump {
+  margin: 0;
+  transform: scale(0.5);
+}
+
+nav {
+  height: 100px;
+  transition: all 0.2s ease;
+}
+nav .navbar-brand {
+  padding: 0;
+}
+nav .navbar-brand img {
+  opacity: 0.125;
+  transition: all 0.5s ease;
+}
+nav .navbar-brand img:hover {
+  opacity: 1;
+}
+nav a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: white !important;
+  font-size: 18px;
+  padding-bottom: 20px !important;
+  transition: all 0.2s ease;
+}
+nav a:hover {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+nav a.active {
+  color: coral !important;
+}
+
+.navbar-default {
+  background-color: transparent !important;
+  border: none !important;
+}
+.navbar-default .navbar-nav {
+  margin-top: 26px;
+}
+
+.navbar-toggle {
+  border: none !important;
+}
+.navbar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+.navbar-toggle .icon-bar {
+  height: 3px !important;
+  width: 30px !important;
+  border-radius: 0px !important;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 6px !important;
+}
+
+.navbar-default.shrink {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  height: 75px;
+}
+.navbar-default.shrink .navbar-brand {
+  padding: 0;
+  transform-origin: top left;
+  transition: transform 0.2s;
+  transform: scale(0.75);
+}
+.navbar-default.shrink .navbar-nav {
+  margin-top: 14px;
+}
+.navbar-default.shrink .navbar-nav a {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-default {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    height: 75px;
+  }
+  .navbar-default .navbar-brand {
+    transform-origin: top left;
+    transition: transform 0.2s;
+    transform: scale(0.75);
+  }
+  .navbar-default .navbar-nav {
+    margin-top: 14px;
+  }
+  .navbar-default .navbar-nav a {
+    font-size: 14px;
+  }
 }
 
 /*!
@@ -8867,81 +8962,5 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important;
-  }
-}
-
-.dump {
-  margin: 0;
-  transform: scale(0.5);
-}
-
-nav {
-  height: 100px;
-  transition: all 0.2s ease;
-}
-nav .navbar-brand {
-  padding: 0;
-}
-nav a {
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6) !important;
-  font-size: 18px;
-  padding-bottom: 20px !important;
-  transition: all 0.2s ease;
-}
-nav a:hover {
-  color: white !important;
-}
-nav a.active {
-  color: coral !important;
-}
-
-.navbar-default {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-.navbar-toggle {
-  border: none !important;
-}
-.navbar-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.25) !important;
-}
-.navbar-toggle .icon-bar {
-  height: 3px !important;
-  width: 30px !important;
-  border-radius: 0px !important;
-}
-.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 6px !important;
-}
-
-.navbar-default.shrink {
-  background-color: rgba(0, 0, 0, 0.75) !important;
-  height: 75px;
-}
-.navbar-default.shrink .navbar-brand {
-  padding: 0;
-  transform-origin: top left;
-  transition: transform 0.2s;
-  transform: scale(0.75);
-}
-.navbar-default.shrink a {
-  font-size: 14px;
-}
-
-@media screen and (max-width: 992px) {
-  .navbar-default {
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    height: 75px;
-  }
-  .navbar-default .navbar-brand {
-    transform-origin: top left;
-    transition: transform 0.2s;
-    transform: scale(0.75);
-  }
-  .navbar-default a {
-    font-size: 14px;
   }
 }
