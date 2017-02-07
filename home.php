@@ -5,10 +5,18 @@
  * @package Underscoresme
  * @since Underscoresme 1.0
  */
-get_header(); ?>	
+get_header(); ?>
+
+
+
+
+
+
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
+            
+
 
             <section id="hero">
                 <div class="container">
@@ -100,11 +108,20 @@ get_header(); ?>
                 </div>
             </section>
             <section id="contact">
-<div id="map"></div>
+                <div id="map"></div>
                 <div class="container">
                         
 
+                    <?php
+                    while ( have_posts() ) : the_post();
 
+                        get_template_part( 'template-parts/content', get_post_format() );
+
+                        the_post_navigation();
+
+                    endwhile; // End of the loop.
+                    ?>
+                    
                     <div class="row">
                         <div id="intro">
                             <h1>This is where the contact form goes</h1>
@@ -134,7 +151,7 @@ get_header(); ?>
                         </ul>
                     </div>
                 </div>
-            </section>                
+            </section>       
 
         </main><!-- #main -->
     </div><!-- #primary -->
