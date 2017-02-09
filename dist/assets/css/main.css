@@ -835,6 +835,19 @@ object {
   display: block;
 }
 
+footer[role="contentinfo"] {
+  margin-top: 80px;
+  height: 200px;
+  background-color: #dcdcdc;
+}
+footer[role="contentinfo"] .copyright img {
+  margin-top: 40px;
+}
+footer[role="contentinfo"] .copyright p {
+  color: #fff;
+  margin-top: -20px;
+}
+
 nav {
   height: 100px;
   transition: all 0.2s ease;
@@ -920,70 +933,6 @@ nav a.active {
   .navbar-default .navbar-nav a {
     font-size: 14px;
   }
-}
-
-footer[role="contentinfo"] {
-  margin-top: 80px;
-  height: 200px;
-  background-color: #dcdcdc;
-}
-footer[role="contentinfo"] .copyright img {
-  margin-top: 40px;
-}
-footer[role="contentinfo"] .copyright p {
-  color: #fff;
-  margin-top: -20px;
-}
-
-.source-sans {
-  font-family: 'Source Sans Pro', sans-serif !important;
-}
-.source-sans.light {
-  font-weight: 200 !important;
-}
-.source-sans.bold {
-  font-weight: 700 !important;
-}
-
-#hero {
-  color: #fff;
-  background-color: #363636;
-  padding: 80px 0 60px;
-  overflow: hidden;
-  height: auto;
-  min-height: 420px;
-}
-#hero h1 {
-  font-size: 72px !important;
-  margin-top: 40px;
-}
-#hero h3 {
-  line-height: 32px;
-}
-
-#work {
-  overflow: hidden;
-  padding: 80px 0px;
-  background-color: #f4f4f4;
-}
-#work h1 {
-  font-size: 60px !important;
-  margin-bottom: 40px;
-}
-#work .thumb.col-xs-4, #work .thumb.col-sm-4 {
-  padding: 1px !important;
-}
-#work .thumb img {
-  width: 100%;
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-#work .thumb img:hover {
-  opacity: 0.75;
-}
-
-#map {
-  height: 300px;
 }
 
 /*!
@@ -8995,4 +8944,55 @@ button.close {
 .dump {
   margin: 0;
   transform: scale(0.5);
+}
+
+.source-sans {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+.source-sans.light {
+  font-weight: 200 !important;
+}
+.source-sans.bold {
+  font-weight: 700 !important;
+}
+
+#hero {
+  color: #fff;
+  background-color: #220818;
+  padding: 80px 0 60px;
+  overflow: hidden;
+  height: auto;
+  min-height: 420px;
+}
+#hero h1 {
+  font-size: 72px !important;
+  margin-top: 40px;
+}
+#hero h3 {
+  line-height: 32px;
+}
+
+#work {
+  overflow: hidden;
+  padding: 80px 0px;
+  background-color: #f4f4f4;
+}
+#work h1 {
+  font-size: 60px !important;
+  margin-bottom: 40px;
+}
+#work .thumb.col-xs-4, #work .thumb.col-sm-4 {
+  padding: 1px !important;
+}
+#work .thumb img {
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+#work .thumb img:hover {
+  opacity: 0.75;
+}
+
+#map {
+  height: 300px;
 }
