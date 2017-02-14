@@ -2,15 +2,15 @@
     $(document).ready(function () {
         $(document).on("scroll", onScroll);
 
-        //smoothscroll
-        $('a[href^="#"]').on('click', function (e) {
+        // $('a[href^="#"]').on('click', function (e) {
+        $('.menu-item').on('click','a', function(e) {
             e.preventDefault();
             $(document).off("scroll");
 
-            $('a').each(function () {
-                $(this).removeClass('active');
-            })
-            $(this).addClass('active');
+//            $('a').each(function () {
+//                $(this).removeClass('active');
+//            })
+//            $(this).addClass('active');
 
             var target = this.hash,
                 menu = target;
@@ -37,4 +37,4 @@
                 currLink.removeClass("active");
             }
         }); 
-    } 
+    }
