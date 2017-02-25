@@ -9,19 +9,18 @@
  * @package underscores
  */
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-    
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700,700i" rel="stylesheet">
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMdjXOS5SNdDqMw5APe0fyeOmrRrVYsSY&callback=initMap">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700,700i" rel="stylesheet">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMdjXOS5SNdDqMw5APe0fyeOmrRrVYsSY&callback=initMap">
     </script>
-<?php wp_head(); ?>
-    
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -45,12 +44,12 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
-		</div>--><!-- .site-branding -->
-
+		</div>--><!-- .site-branding --> 
+        
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand" href="#masthead">
+                <a class="navbar-brand" href="/underscores-victor/#masthead">
                     <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/img/logo-victor.png" alt="">
                 </a>                 
                 <div class="navbar-header">
@@ -65,7 +64,7 @@
                     <?php
                         wp_nav_menu( array(
                             'menu'              => 'primary',
-                            'theme_location'    => 'primary',
+                            'theme_location'    => 'primary',                            
                             'depth'             => 2,
                             'container'         => 'div',
                             // 'container_class'   => 'collapse navbar-collapse',
@@ -73,7 +72,7 @@
                             'menu_class'        => 'nav navbar-nav',
                             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                             'walker'            => new wp_bootstrap_navwalker())
-                        );
+                        );  
                     ?>
                 </div><!--end navbar-colapse-->
             </div><!--end container-->

@@ -154,6 +154,7 @@ require get_template_directory() . '/inc/jetpack.php';
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
+//Register Navigation
 register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'underscores-starter' ),
+    'primary' => __( 'Primary Menu', 'undersocres-victor' ),
 ) );

@@ -835,19 +835,6 @@ object {
   display: block;
 }
 
-footer[role="contentinfo"] {
-  margin-top: 80px;
-  height: 200px;
-  background-color: #dcdcdc;
-}
-footer[role="contentinfo"] .copyright img {
-  margin-top: 40px;
-}
-footer[role="contentinfo"] .copyright p {
-  color: #fff;
-  margin-top: -20px;
-}
-
 nav {
   height: 100px;
   transition: all 0.2s ease;
@@ -8941,9 +8928,17 @@ button.close {
   }
 }
 
-.dump {
-  margin: 0;
-  transform: scale(0.5);
+footer[role="contentinfo"] {
+  margin-top: 80px;
+  height: 200px;
+  background-color: #dcdcdc;
+}
+footer[role="contentinfo"] .copyright img {
+  margin-top: 40px;
+}
+footer[role="contentinfo"] .copyright p {
+  color: #fff;
+  margin-top: -20px;
 }
 
 .source-sans {
@@ -8995,4 +8990,9 @@ button.close {
 
 #map {
   height: 300px;
+}
+
+.dump {
+  margin: 0;
+  transform: scale(0.5);
 }
