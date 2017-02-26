@@ -1,3 +1,106 @@
+nav {
+  height: 100px;
+  transition: all 0.2s ease;
+}
+nav .navbar-brand {
+  padding: 0;
+}
+nav .navbar-brand img {
+  opacity: 0.125;
+  transition: all 0.5s ease;
+}
+nav .navbar-brand img:hover {
+  opacity: 1;
+}
+nav a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: white !important;
+  font-size: 18px;
+  padding-bottom: 20px !important;
+  transition: all 0.2s ease;
+}
+nav a:hover {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+nav a.active {
+  color: coral !important;
+}
+
+.home .navbar-default {
+  background-color: transparent !important;
+}
+
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  border: none !important;
+}
+.navbar-default .navbar-nav {
+  margin-top: 26px;
+}
+
+.navbar-toggle {
+  border: none !important;
+}
+.navbar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+.navbar-toggle .icon-bar {
+  height: 3px !important;
+  width: 30px !important;
+  border-radius: 0px !important;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 6px !important;
+}
+
+.navbar-default.shrink {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  height: 75px;
+}
+.navbar-default.shrink .navbar-brand {
+  padding: 0;
+  transform-origin: top left;
+  transition: transform 0.2s;
+  transform: scale(0.75);
+}
+.navbar-default.shrink .navbar-nav {
+  margin-top: 14px;
+}
+.navbar-default.shrink .navbar-nav a {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-default {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    height: 75px;
+  }
+  .navbar-default .navbar-brand {
+    transform-origin: top left;
+    transition: transform 0.2s;
+    transform: scale(0.75);
+  }
+  .navbar-default .navbar-nav {
+    margin-top: 14px;
+  }
+  .navbar-default .navbar-nav a {
+    font-size: 14px;
+  }
+}
+
+.dump {
+  margin: 0;
+  transform: scale(0.5);
+}
+
+.content-area {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  margin-bottom: 200px;
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -835,91 +938,72 @@ object {
   display: block;
 }
 
-nav {
-  height: 100px;
-  transition: all 0.2s ease;
+.source-sans {
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
-nav .navbar-brand {
-  padding: 0;
+.source-sans.light {
+  font-weight: 200 !important;
 }
-nav .navbar-brand img {
-  opacity: 0.125;
+.source-sans.bold {
+  font-weight: 700 !important;
+}
+
+#hero {
+  color: #fff;
+  background-color: #220818;
+  padding: 80px 0 60px;
+  overflow: hidden;
+  height: auto;
+  min-height: 420px;
+}
+#hero h1 {
+  font-size: 72px !important;
+  margin-top: 40px;
+}
+#hero h3 {
+  line-height: 32px;
+}
+
+#work {
+  overflow: hidden;
+  padding: 80px 0px;
+  background-color: #f4f4f4;
+}
+#work h1 {
+  font-size: 60px !important;
+  margin-bottom: 40px;
+}
+#work .thumb.col-xs-4, #work .thumb.col-sm-4 {
+  padding: 1px !important;
+}
+#work .thumb img {
+  width: 100%;
+  opacity: 1;
   transition: all 0.5s ease;
 }
-nav .navbar-brand img:hover {
-  opacity: 1;
-}
-nav a {
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  color: white !important;
-  font-size: 18px;
-  padding-bottom: 20px !important;
-  transition: all 0.2s ease;
-}
-nav a:hover {
-  color: rgba(255, 255, 255, 0.5) !important;
-}
-nav a.active {
-  color: coral !important;
+#work .thumb img:hover {
+  opacity: 0.75;
 }
 
-.navbar-default {
-  background-color: transparent !important;
-  border: none !important;
-}
-.navbar-default .navbar-nav {
-  margin-top: 26px;
+#map {
+  height: 300px;
 }
 
-.navbar-toggle {
-  border: none !important;
+footer[role="contentinfo"] {
+  margin-top: 80px;
+  height: 200px;
+  background-color: #dcdcdc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
 }
-.navbar-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.25) !important;
+footer[role="contentinfo"] .copyright img {
+  margin-top: 40px;
 }
-.navbar-toggle .icon-bar {
-  height: 3px !important;
-  width: 30px !important;
-  border-radius: 0px !important;
-}
-.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 6px !important;
-}
-
-.navbar-default.shrink {
-  background-color: rgba(0, 0, 0, 0.75) !important;
-  height: 75px;
-}
-.navbar-default.shrink .navbar-brand {
-  padding: 0;
-  transform-origin: top left;
-  transition: transform 0.2s;
-  transform: scale(0.75);
-}
-.navbar-default.shrink .navbar-nav {
-  margin-top: 14px;
-}
-.navbar-default.shrink .navbar-nav a {
-  font-size: 14px;
-}
-
-@media screen and (max-width: 992px) {
-  .navbar-default {
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    height: 75px;
-  }
-  .navbar-default .navbar-brand {
-    transform-origin: top left;
-    transition: transform 0.2s;
-    transform: scale(0.75);
-  }
-  .navbar-default .navbar-nav {
-    margin-top: 14px;
-  }
-  .navbar-default .navbar-nav a {
-    font-size: 14px;
-  }
+footer[role="contentinfo"] .copyright p {
+  color: #fff;
+  margin-top: -20px;
 }
 
 /*!
@@ -8926,73 +9010,4 @@ button.close {
   .hidden-print {
     display: none !important;
   }
-}
-
-footer[role="contentinfo"] {
-  margin-top: 80px;
-  height: 200px;
-  background-color: #dcdcdc;
-}
-footer[role="contentinfo"] .copyright img {
-  margin-top: 40px;
-}
-footer[role="contentinfo"] .copyright p {
-  color: #fff;
-  margin-top: -20px;
-}
-
-.source-sans {
-  font-family: 'Source Sans Pro', sans-serif !important;
-}
-.source-sans.light {
-  font-weight: 200 !important;
-}
-.source-sans.bold {
-  font-weight: 700 !important;
-}
-
-#hero {
-  color: #fff;
-  background-color: #220818;
-  padding: 80px 0 60px;
-  overflow: hidden;
-  height: auto;
-  min-height: 420px;
-}
-#hero h1 {
-  font-size: 72px !important;
-  margin-top: 40px;
-}
-#hero h3 {
-  line-height: 32px;
-}
-
-#work {
-  overflow: hidden;
-  padding: 80px 0px;
-  background-color: #f4f4f4;
-}
-#work h1 {
-  font-size: 60px !important;
-  margin-bottom: 40px;
-}
-#work .thumb.col-xs-4, #work .thumb.col-sm-4 {
-  padding: 1px !important;
-}
-#work .thumb img {
-  width: 100%;
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-#work .thumb img:hover {
-  opacity: 0.75;
-}
-
-#map {
-  height: 300px;
-}
-
-.dump {
-  margin: 0;
-  transform: scale(0.5);
 }

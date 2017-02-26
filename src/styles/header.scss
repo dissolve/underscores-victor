@@ -29,8 +29,13 @@
     } 
 
 // Custom
+    .home {
+        .navbar-default {
+            background-color: transparent !important;
+        }
+    }
     .navbar-default {
-        background-color: transparent !important; // rgba(248, 248, 248, 0.25) !important;
+        background-color: rgba(0, 0, 0, 0.75) !important;
         border: none !important;
         .navbar-nav {
             margin-top: 26px;
@@ -50,6 +55,7 @@
             margin-top: 6px !important;
         }
     }
+
 
 // Shrink
     .navbar-default.shrink {

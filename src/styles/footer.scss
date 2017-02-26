@@ -3,6 +3,10 @@
         margin-top: 80px;
         height: 200px;
         background-color: #dcdcdc;
+position: fixed;
+bottom: 0; 
+width: 100%;
+z-index: 1;        
         .copyright {
             img {
                 margin-top: 40px;
@@ -12,4 +16,4 @@
                 margin-top: -20px;
             } 
         }
-    } 
+    }   

@@ -2505,32 +2505,28 @@ if (typeof jQuery === 'undefined') {
         // split_url_list = window.location.pathname.split('/')
         // filename = split_url_list[split_url_list.length - 1] 
         
-        $('a[href*="'+window.location.pathname+'#"]').on('click', function(e) {
+        $('a[href*="' + window.location.pathname + '#"]').on('click', function (e) {
             e.preventDefault();
             $(document).off("scroll");
-
-            var target = this.hash,
-                menu = target;
+            var target = this.hash
+                , menu = target;
             $target = $(target);
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top+2
+                'scrollTop': $target.offset().top + 2
             }, 500, 'swing', function () {
-                window.location.hash = target; 
+                window.location.hash = target;
                 $(document).on("scroll", onScroll);
             });
         });
-    });
- 
-    $(document).ready(function () {
         var location = window.location.href;
-        $('.menu-item a').each(function(){
-            if(location.indexOf(this.href)>-1) {         
-               $(this).addClass('active');
-            }
+        $('.menu-item a').each(function () {
+        if (location.indexOf(this.href) > -1) {
+            $(this).addClass('active');
+        }
         });
-    }); 
+    });
 
-    function onScroll(event){
+    function onScroll(event) {
     var scrollPos = $(document).scrollTop();
     var current_hash = window.location.hash
    
@@ -2543,7 +2539,7 @@ if (typeof jQuery === 'undefined') {
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 $('.menu-item a').removeClass("active");
                 currLink.addClass("active");
-                window.location.hash = '#' + hash
+                window.location.hash = ' ' + hash
             }
             else {
                 currLink.removeClass("active");
@@ -2551,16 +2547,6 @@ if (typeof jQuery === 'undefined') {
         }
     });
     }
-
-
-
-
-
-
-
-
-
-
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
         $('nav').addClass('shrink');
