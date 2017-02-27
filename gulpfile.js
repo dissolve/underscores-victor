@@ -43,13 +43,13 @@
         .pipe(notify({ message: 'Images task complete' }));
     });
 
-    //gulp.task('clean', function() {
-    //    return del(['dist/assets/css', 'dist/assets/js', 'dist/assets/img']);
-    //});
+    gulp.task('clean', function() {
+        return del(['dist/assets/css', 'dist/assets/js', 'dist/assets/img']);
+    });
 
-    //gulp.task('default', ['clean'], function() {
-    //    gulp.start('styles', 'scripts', 'images');
-    //});
+    gulp.task('default', ['clean'], function() {
+        gulp.start('styles', 'scripts', 'images');
+    });
 
     gulp.task('watch', function() {
 

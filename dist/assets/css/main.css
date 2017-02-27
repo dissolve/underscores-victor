@@ -8949,6 +8949,23 @@ button.close {
   }
 }
 
+.dump {
+  margin: 0;
+  transform: scale(0.5);
+}
+
+.content-area {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  margin-bottom: 200px;
+  padding-top: 100px;
+}
+
+.home .content-area {
+  padding-top: 0px;
+}
+
 .source-sans {
   font-family: 'Source Sans Pro', sans-serif !important;
 }
@@ -8998,21 +9015,4 @@ button.close {
 
 #map {
   height: 300px;
-}
-
-.dump {
-  margin: 0;
-  transform: scale(0.5);
-}
-
-.content-area {
-  position: relative;
-  z-index: 10;
-  background-color: #fff;
-  margin-bottom: 200px;
-  padding-top: 100px;
-}
-
-.home .content-area {
-  padding-top: 0px;
 }
